@@ -23,15 +23,20 @@
 
                         <!-- Menu Produits -->
                         <li class="nav-item">
-                            <a class="nav-link" href="/products"><i class="bi bi-box"></i> Produits</a>
+                            <a class="nav-link" href="index.php?page=listProduit"><i class="bi bi-box"></i> Produits</a>
                         </li>
 
                         <!-- Menu Type de produits avec sous-menu -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="typeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="index.php?page=listTypeProduit" id="typeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="bi bi-tags"></i> Types de Produits
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="typeDropdown">
+                            </a> -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?page=listTypeProduit"><i class="bi bi-box"></i> Type Produits</a>
+                        </li>
+
+                            <!-- <ul class="dropdown-menu" aria-labelledby="typeDropdown">
                                 <li><a class="dropdown-item" href="/types/informatique">Informatique</a></li>
                                 <li><a class="dropdown-item" href="/types/bureau">Bureau</a></li>
                                 <li><hr class="dropdown-divider"></li>
@@ -43,8 +48,9 @@
                                         <li><a class="dropdown-item" href="/types/informatique/ecrans">Écrans</a></li>
                                     </ul>
                                 </li>
-                            </ul>
-                        </li>
+                            </ul> -->
+
+                        <!-- </li> -->
 
                         <!-- Exemple d’un menu Stock -->
                         <!-- <li class="nav-item">
@@ -62,7 +68,7 @@
                                 <li><a class="dropdown-item" href="/login"><i class="bi bi-box-arrow-in-right"></i> Connexion</a></li>
                                 <li><a class="dropdown-item" href="/register"><i class="bi bi-person-plus"></i> Inscription</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="/users"><i class="bi bi-people"></i> Liste des utilisateurs</a></li>
+                                <li><a class="dropdown-item" href="index.php?page=listUser"><i class="bi bi-people"></i> Liste des utilisateurs</a></li>
                                 <li><a class="dropdown-item text-danger" href="/logout"><i class="bi bi-box-arrow-right"></i> Déconnexion</a></li>
                             </ul>
                         </li>
