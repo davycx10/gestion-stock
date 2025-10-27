@@ -65,8 +65,8 @@
                                 <i class="bi bi-person"></i> Utilisateur
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                                <li><a class="dropdown-item" href="/login"><i class="bi bi-box-arrow-in-right"></i> Connexion</a></li>
-                                <li><a class="dropdown-item" href="/register"><i class="bi bi-person-plus"></i> Inscription</a></li>
+                                <li><a class="dropdown-item" href="index.php?page=LogInUser"><i class="bi bi-box-arrow-in-right"></i> Connexion</a></li>
+                                <li><a class="dropdown-item" href="index.php?page=addUser"><i class="bi bi-person-plus"></i> Inscription</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="index.php?page=listUser"><i class="bi bi-people"></i> Liste des utilisateurs</a></li>
                                 <li><a class="dropdown-item text-danger" href="/logout"><i class="bi bi-box-arrow-right"></i> Déconnexion</a></li>

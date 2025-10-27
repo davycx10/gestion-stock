@@ -1,0 +1,10 @@
+<?php 
+include ('bdd/bdd.php');
+include ('model/user/userModel.php');
+
+
+$utilisateur = new Utilisateur($bdd);
+
+$allUtilisateurs = $utilisateur->allUtilisateurs();
+
+?>

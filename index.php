@@ -10,6 +10,7 @@ switch ($page) {
         include ('view/accueil.php');
         break;
 
+        // partie produit
     case 'listProduit':
         include ('view/produit/listProduit.php');
         break;
@@ -18,10 +19,18 @@ switch ($page) {
         include ('view/type_produit/listTypeProduit.php');
         break;
 
+        // partie utilisateur
     case 'listUser':
         include ('view/user/listUser.php');
         break;
 
+    case 'addUser':
+        include ('view/user/addUser.php');
+        break;
+
+    case 'LogInUser':
+        include ('view/user/LogInUser.php');
+        break;
 
 
     default:
