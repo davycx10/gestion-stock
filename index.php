@@ -1,4 +1,5 @@
 <?php 
+session_start();
 //ajout de l'header partt
 include ('view/commun/header.php');
 
@@ -14,7 +15,12 @@ switch ($page) {
     case 'listProduit':
         include ('view/produit/listProduit.php');
         break;
-
+    
+    case 'addProduit':
+        include ('view/produit/addProduit.php');
+        break;
+        
+// partie produit
     case 'listTypeProduit':
         include ('view/type_produit/listTypeProduit.php');
         break;

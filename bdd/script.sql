@@ -16,25 +16,22 @@ CREATE TABLE utilisateur (
 -- ============================================
 -- TABLE : type_produit
 -- ============================================
+
 CREATE TABLE type_produit (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nom VARCHAR(100) NOT NULL
+    nom VARCHAR(100) PRIMARY KEY
 );
 
 -- ============================================
 -- TABLE : produit
 -- ============================================
 CREATE TABLE produit (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     nom VARCHAR(100) NOT NULL,
     description TEXT,
     quantite INT DEFAULT 0,
-    id_type_produit INT NOT NULL,
-    FOREIGN KEY (id_type_produit) REFERENCES type_produit(id)
-        ON DELETE CASCADE
-        ON UPDATE CASCADE
+    nom_type_produit VARCHAR(100),
+    FOREIGN KEY (nom_type_produit) REFERENCES type_produit(nom)
 );
-
 -- ============================================
 -- INSERTIONS DE DÉMONSTRATION
 -- ============================================
@@ -53,5 +50,5 @@ CREATE TABLE produit (
 
 -- Exemple d’utilisateur avec mot de passe haché en SHA1
 -- Exemple : mot de passe = "monsecret"
--- INSERT INTO utilisateurs (nom, email, mot_de_passe)
+-- INSERT INTO utilisateurs (nom, prenom, email, mdp)
 -- VALUES ('Jean Dupont', 'jean.dupont@example.com', SHA1('monsecret'));
