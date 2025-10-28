@@ -1,6 +1,6 @@
 -- Création de la base de données
-CREATE DATABASE IF NOT EXISTS magasin;
-USE magasin;
+CREATE DATABASE IF NOT EXISTS Inventory_management;
+USE Inventory_management;
 
 -- ============================================
 -- TABLE : utilisateurs

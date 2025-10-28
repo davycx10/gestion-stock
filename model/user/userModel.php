@@ -17,7 +17,7 @@ class User
         return $req->fetchAll();
     }
 
-    public function ajouterUtilisateur($nom, $prenom, $email, $mdp)
+    public function addUser($nom, $prenom, $email, $mdp)
     {
                 
         $req = $this->bdd->prepare("INSERT INTO utilisateur (nom, prenom, email, mdp) VALUES (:nom, :prenom, :email, :mdp)");

@@ -3,8 +3,8 @@ include ('bdd/bdd.php');
 include ('model/user/userModel.php');
 
 
-$utilisateur = new Utilisateur($bdd);
+$user = new User($bdd);
 
-$allUtilisateurs = $utilisateur->allUtilisateurs();
+$allUser = $user->allUser();
 
 ?>

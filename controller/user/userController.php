@@ -25,7 +25,7 @@ $userController =  new UserController($bdd);
             break;
         
         default:
-            header('Location:http://localhost/chauffeurs/index.php?page=accueil');
+            header('Location:http://localhost/gestion-stock/index.php?page=accueil');
             break;
         
     }
@@ -53,6 +53,8 @@ class UserController
         if (!$login){
 
         header('Location:http://localhost/gestion-stock/index.php?page=accueil');
+            var_dump("connexion failed");
+            die();
 
         }
 
